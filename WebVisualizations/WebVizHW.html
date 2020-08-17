@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Vizualizations</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class = "bodybackground">
+    <!--Create the navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <!--Navbar button-->
+        <a class="navbar-brand h1hover" href="WebVizHW.html" style = "font-family: monospace; color:dodgerblue; font-size: 28px;">Latitude: Homepage</a>
+        <!--optional:
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>-->
+      <!--dropdown in Navbar-->
+        <div class="collapse navbar-collapse dropdown" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto" ></ul>
+            <li class="nav-item dropdown nav justify-content-end">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="Cloudinesslat.html" target="_blank"> Plot 1: Clouds</a>
+                <a class="dropdown-item" href="Latitudehum.html" target="_blank">Plot 2: Humidity</a>
+                <a class="dropdown-item" href="maxtemplat.html" target="_blank">Plot 3: Max Temperature</a>
+                <a class="dropdown-item" href="windspeedlat.html" target="_blank">Plot 4: Windspeed</a>
+                
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">About</a>
+              </div>
+            </li>
+            <!--smaller icons in navbar-->
+            <li class="nav-item nav justify-content-end">
+                <a class="nav-link" href="comparison.html" target="_blank">Comparison <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item nav justify-content-end">
+                <a class="nav-link" href="data.html" target = "_blank">Data</a>
+            </li>
+        </div>
+    </nav>
+    
+  
+    
+
+    <!--Header with two containers-->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-7" style= "background-color: white; margin-top: 50px"><br> <h1 class = "h1text"> Summary: Latitude vs. X</h1>
+        <hr>
+        
+        </div>
+        <div class="col-sm-1">
+        </div>
+        <div class="col-sm-4" style = "background-color: white; margin-top: 50px"><br><h1 class = "h1viz" >Visualizations</h1>
+        <hr>
+      </div>
+      </div>
+    </div>
+
+    <!--First containers: this will include a visualization and a paragraph-->
+    <div class = "container">
+      <div class="row">
+      <!--Image-->
+        <div class="col-3" style='background-color: white;'>
+          <a href ="WebVizHW.html" target="_blank" >
+            <img src = "Assets/MaxTempbyLatitude.png" alt="Image about max temp" width="260px" height="200px" >
+          </a>
+        </a>
+      </div>
+      <!--Parapraph about the project-->
+        <div class="col-4" style='background-color: white;'><b>The purpose</b> of this project was to provide evidence that temperatures near the equator tend to be warmer than temperatures on other latitudes. Moreover, we analyzed other weather related events and compared them by latitude. These events included humidity, cloudiness, and windspeed. We visualized our data via scatterplots </div>
+        <!--Filler column/row-->
+        <div class="col-1"></div>
+        <!--top left image-->
+        <div class="col-sm-2" style='background-color: white;'><a href ="Cloudinesslat.html" target="_blank" ><img src = "Assets/CloudinessLatitude.png" alt="Image about Clouds" width="170px" height="140px"></a></div>
+        <!--top right image-->
+        <div class="col-sm-2" style='background-color: white;'><a href ="Latitudehum.html" target="_blank"><img src = "Assets/HumidityLatitude.png" alt="image about Humidity" width="170px" height="140px"></a></div>
+      </div>
+    </div>
+    <!--Second containers: Next row will continue on with the paragraph then have the two other images-->
+  <div class = "container">
+    <div class="row">
+      <div class="col-sm-7" style='background-color: white;'><br><b>The method and findings</b> of this analysis began by looking  into over 600 cities blah  into over 600 cities blah  into over 600 cities blah  into over 600 cities blah</div>
+      <div class="col-sm-1" ></div>
+      <div class="col-sm-2" style='background-color: white; padding-bottom: 100px;'><a href = "maxtemplat.html" target="_blank" ><img src="Assets/MaxTempbyLatitude.png" alt="image about Max Temperature" width="170px" height="140px"></a></div>
+      <div class="col-sm-2" style='background-color: white; padding-bottom: 100px;'><a href = "windspeedlat.html" target="_blank"><img src="Assets/WindspeedLatitude.png" alt ="image about windspeed" width="170px" height="140px"></a></div>
+    </div>
+  </div>
+
+  <!--Bottom Navbar-->
+  <nav class="navbar fixed-bottom navbar-light bg-light">
+    <a class="navbar-text" href="#"><small>copyright 2020</small></a>
+  </nav>
+
+        
+      
+ 
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

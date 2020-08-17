@@ -1,0 +1,63 @@
+
+.navstyle {
+     
+    color: red;
+    font-size: 30px;
+
+}
+
+.h1text {
+    font-family: monospace;
+    color: orange;
+    size: 30px;
+
+}
+.h1viz{
+    font-family: monospace;
+    color: orange;
+    font-size: 28px;
+
+}
+.bodybackground {
+    background-color: lightgrey;
+}
+
+.dropdown{
+    font-family: monospace;
+    font-size: 18px;
+
+}
+.h1hover:hover{
+    background-color: lightgrey;
+  }
+
+
+
+/* Adding media queries to show the drop-down, and hide the navbar when the screen is smaller than 600 pixels */
+@media (max-width: 600px) {
+    .navbar li {
+      padding: 10px;
+    }
+  
+    .post {
+      margin-right: 30px;
+      margin-left: 30px;
+    }
+  
+    .header {
+      height: 100px;
+    }
+  
+    .header h1 {
+      padding: 10px;
+    }
+  
+    .navbar ul {
+      visibility: hidden;
+    }
+  
+    #nav-select {
+      visibility: visible;
+    }
+  }
+  
