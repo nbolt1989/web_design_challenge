@@ -1,12 +1,28 @@
 
 .navstyle {
-     
     color: red;
     font-size: 30px;
 
 }
+.p {
+    font-family: monospace;
+}
 
-.h1text {
+.h9{
+    font-family: monospace;
+    color: grey;
+}
+.h5 {
+    text-align: center;
+    color: dodgerblue;
+    font-family: monospace;
+}
+
+.wrapimage {
+    float: left;
+}
+
+.h1{
     font-family: monospace;
     color: orange;
     size: 30px;
@@ -29,8 +45,11 @@
 }
 .h1hover:hover{
     background-color: lightgrey;
-  }
+}
 
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
 
 
 /* Adding media queries to show the drop-down, and hide the navbar when the screen is smaller than 600 pixels */
