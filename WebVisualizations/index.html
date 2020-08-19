@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>index.html</title>
+  <title>Weather Vizualizations</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
@@ -28,7 +28,7 @@
               aria-haspopup="true" aria-expanded="false">Plots
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="Cloudinesslat.html" target="_blank">Plot 1: Clouds</a>
+              <a class="dropdown-item" href="Cloudinesslat.html" target="_blank"> Plot 1: Clouds</a>
               <a class="dropdown-item" href="Latitudehum.html" target="_blank">Plot 2: Humidity</a>
               <a class="dropdown-item" href="maxtemplat.html" target="_blank">Plot 3: Max Temperature</a>
               <a class="dropdown-item" href="windspeedlat.html" target="_blank">Plot 4: Windspeed</a>
@@ -52,13 +52,16 @@
   <!--Header -->
   <div class="container">
     <div class="row">
-      <div class="col-sm-1 col-md-7 col-lg-7" style="background-color: white; margin-top: 50px"><br>
+      <!-- Summary Area -->
+      <div class="col-sm-7 col-md-7 col-lg-7" style="background-color: white; margin-top: 50px"><br>
         <h1 class="h1"> Summary: Latitude vs. X</h1>
         <hr>
       </div>
+      <!-- Filler -->
       <div class="col-sm-1">
       </div>
-      <div class="col-sm-4" style="background-color: white; margin-top: 50px"><br>
+      <!-- Vuiz Side -->
+      <div class="col-sm-4 col-md-4" style="background-color: white; margin-top: 50px"><br>
         <h1 class="h1viz">Visualizations</h1>
         <hr>
       </div>
@@ -66,7 +69,7 @@
 
     <!--next row-->
     <div class="row">
-      <div class="col-sm-1 col-md-7 col-lg-7" style="background-color: white;">
+      <div class="col-sm-7 col-md-7 col-lg-7" style="background-color: white;">
         <a href="WebVizHW.html" target="_blank">
           <img class="wrapimage" src="Assets/MaxTempbyLatitude.png" alt="Image about max temp" width="260px"
             height="200px"></a>
@@ -86,7 +89,7 @@
       <!--Filler column/row-->
       <div class="col-sm-1 col-md-1 col-lg-1"></div>
       <!--top left image-->
-      <div class="col-sm-1 col-md-2 col-lg-2" style="background-color: white;">
+      <div class="col-sm-2 col-md-2 col-lg-2" style="background-color: white;">
         <a href="Cloudinesslat.html" target="_blank">
           <img class="rounded mx-auto d-block" style="width:100%" src="Assets/CloudinessLatitude.png"
             alt="Image about Clouds"><br><br>
@@ -97,7 +100,7 @@
         </a>
       </div>
       <!--top right image-->
-      <div class="col-sm-1 col-md-2 col-lg-2" style='background-color: white;'>
+      <div class="col-sm-2 col-md-2 col-lg-2" style='background-color: white;'>
         <a href="Latitudehum.html" target="_blank">
           <img class="rounded mx-auto d-block" style="width:100%" src="Assets/HumidityLatitude.png"
             alt="image about Humidity"><br><br>
