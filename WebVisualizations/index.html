@@ -12,38 +12,38 @@
 
 <body class="bodybackground">
   <!--Create the navbar-->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <!--Navbar button-->
-        <a class="navbar-brand h1hover" href="WebVizHW.html"
-          style="font-family: monospace; color:dodgerblue; font-size: 28px;">Latitude: Homepage</a>
-        
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!--dropdown in Navbar-->
-        <div class="collapse navbar-collapse dropdown" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto"></ul>
-          <li class="nav-item dropdown nav justify-content-end">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">Plots
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="Cloudinesslat.html" target="_blank"> Plot 1: Clouds</a>
-              <a class="dropdown-item" href="Latitudehum.html" target="_blank">Plot 2: Humidity</a>
-              <a class="dropdown-item" href="maxtemplat.html" target="_blank">Plot 3: Max Temperature</a>
-              <a class="dropdown-item" href="windspeedlat.html" target="_blank">Plot 4: Windspeed</a>
-            </div>
-          </li>
-          <!--smaller icons in navbar-->
-          <li class="nav-item nav justify-content-end">
-            <a class="nav-link" href="comparison.html" target="_blank">Comparison <span
-                class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item nav justify-content-end">
-            <a class="nav-link" href="data.html" target="_blank">Data</a>
-          </li>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!--Navbar button-->
+    <a class="navbar-brand h1hover" href="WebVizHW.html"
+      style="font-family: monospace; color:dodgerblue; font-size: 28px;">Latitude: Homepage</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!--dropdown in Navbar-->
+    <div class="collapse navbar-collapse dropdown" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto"></ul>
+      <li class="nav-item dropdown nav justify-content-end">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">Plots
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="Cloudinesslat.html" target="_blank"> Plot 1: Clouds</a>
+          <a class="dropdown-item" href="Latitudehum.html" target="_blank">Plot 2: Humidity</a>
+          <a class="dropdown-item" href="maxtemplat.html" target="_blank">Plot 3: Max Temperature</a>
+          <a class="dropdown-item" href="windspeedlat.html" target="_blank">Plot 4: Windspeed</a>
         </div>
-    
+      </li>
+      <!--smaller icons in navbar-->
+      <li class="nav-item nav justify-content-end">
+        <a class="nav-link" href="comparison.html" target="_blank">Comparison <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item nav justify-content-end">
+        <a class="nav-link" href="data.html" target="_blank">Data</a>
+      </li>
+    </div>
+
   </nav>
 
 
@@ -53,23 +53,9 @@
   <div class="container">
     <div class="row">
       <!-- Summary Area -->
-      <div class="col-sm-7 col-md-7 col-lg-7" style="background-color: white; margin-top: 50px"><br>
+      <div class="col-sm-12 col-md-7 col-lg-7" style="background-color: white; margin-top: 50px"><br>
         <h1 class="h1"> Summary: Latitude vs. X</h1>
         <hr>
-      </div>
-      <!-- Filler -->
-      <div class="col-sm-1">
-      </div>
-      <!-- Vuiz Side -->
-      <div class="col-sm-4 col-md-4" style="background-color: white; margin-top: 50px"><br>
-        <h1 class="h1viz">Visualizations</h1>
-        <hr>
-      </div>
-    </div>
-
-    <!--next row-->
-    <div class="row">
-      <div class="col-sm-7 col-md-7 col-lg-7" style="background-color: white;">
         <a href="WebVizHW.html" target="_blank">
           <img class="wrapimage" src="Assets/MaxTempbyLatitude.png" alt="Image about max temp" width="260px"
             height="200px"></a>
@@ -86,35 +72,44 @@
         </p>
       </div>
 
-      <!--Filler column/row-->
-      <div class="col-sm-1 col-md-1 col-lg-1"></div>
-      <!--top left image-->
-      <div class="col-sm-2 col-md-2 col-lg-2" style="background-color: white;">
-        <a href="Cloudinesslat.html" target="_blank">
-          <img class="rounded mx-auto d-block" style="width:100%" src="Assets/CloudinessLatitude.png"
-            alt="Image about Clouds"><br><br>
-          <a href="maxtemplat.html" target="_blank">
-            <img class="rounded mx-auto d-block" style="width:100%;" src="Assets/MaxTempbyLatitude.png"
-              alt="image about Max Temperature">
-          </a>
-        </a>
+      <!-- Filler -->
+      <div class="col-sm-1" style="margin-right: -75px;">
       </div>
-      <!--top right image-->
-      <div class="col-sm-2 col-md-2 col-lg-2" style='background-color: white;'>
-        <a href="Latitudehum.html" target="_blank">
-          <img class="rounded mx-auto d-block" style="width:100%" src="Assets/HumidityLatitude.png"
-            alt="image about Humidity"><br><br>
-          <a href="windspeedlat.html" target="_blank">
-            <img class="rounded mx-auto d-block" style="width:100%" src="Assets/WindspeedLatitude.png"
-              alt="image about windspeed">
-          </a>
-        </a>
+
+      <!-- Viz Side -->
+      <div class="col-sm-12 col-md-4" style="background-color: white; margin-top: 50px; margin-bottom: 50px;" ><br>
+        <h1 class="h1viz">Visualizations</h1>
+        <hr>
+        <div class="row">
+          <div class="col-sm-3 col-md-6">
+            <a href="Cloudinesslat.html" target="_blank">
+              <img class="rounded mx-auto d-block" style="width:100%" src="Assets/CloudinessLatitude.png"
+                alt="Image about Clouds"></a>
+          </div>
+          <div class="col-sm-3 col-md-6">
+            <a href="maxtemplat.html" target="_blank">
+              <img class="rounded mx-auto d-block" style="width:100%;" src="Assets/MaxTempbyLatitude.png"
+                alt="image about Max Temperature"></a>
+          </div>
+        </div>
+        <div class="row" style="margin-top: 20px;">
+          <div class="col-sm-3 col-md-6">
+            <a href="Latitudehum.html" target="_blank">
+              <img class="rounded mx-auto d-block" style="width:100%" src="Assets/HumidityLatitude.png"
+                alt="image about Humidity"></a>
+          </div>
+          <div class="col-sm-3 col-md-6">
+            <a href="windspeedlat.html" target="_blank">
+              <img class="rounded mx-auto d-block" style="width:100%" src="Assets/WindspeedLatitude.png"
+                alt="image about windspeed"></a>
+          </div>
+        </div>
       </div>
     </div>
 
 
     <!--Bottom Navbar-->
-    <nav class="navbar fixed-bottom navbar-light bg-light">
+    <nav class="navbar fixed-bottom navbar-light bg-light"> 
       <a class="navbar-text" href="#"><small>copyright 2020</small></a>
     </nav>
 
